@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+   }
+  </style>
+</head>
+<body>
+  <!-- b -->
+  <!-- HTML <b> 요소는 독자의 주의를 요소의 콘텐츠로 끌기 위한 용도로 사용합니다. 그 외의 다른 특별한 중요도는 주어지지 않습니다. 원래는 "굵은 글씨 요소"로 불렸으며, 대부분의 브라우저도 여전히 텍스트를 굵은 글씨체로 강조합니다. 그러나 <b>를 사용해 텍스트를 꾸미면 안됩니다. 대신 CSS font-weight를 사용해 굵은 글씨체를 적용하거나, <strong> 요소를 사용해 특별히 중요한 텍스트를 나타내세요. -->
+    <p>The two most popular science courses offered by the school are <b class="term">chemistry</b> (the study of chemicals and the composition of substances) and <b class="term">physics</b> (the study of the nature and properties of matter and energy).</p>
+
+    <p>저는 이 <b>고글</b>을 추천합니다. 왜냐하면 이 <b>고글</b>을 착용하니, 안전하게 작업을 할 수 있었습니다.</p>
+  <!-- strong -->
+  <!-- HTML <strong> 요소는 중대하거나 긴급한 콘텐츠를 나타냅니다. 보통 브라우저는 굵은 글씨로 표시합니다.  -->
+    <p>... the most important rule, the rule you can never forget, no matter how much he cries, no matter how much he begs: <strong>never feed him after midnight</strong>.</p>
+    
+    <!-- i -->
+    <!-- HTML <i> 요소는 텍스트에서 어떤 이유로 주위와 구분해야 하는 부분을 나타냅니다. 기술 용어, 외국어 구절, 등장인물의 생각 등을 예시로 들 수 있습니다. 보통 기울임꼴로 표시합니다. -->
+      <p>I looked at it and thought <i>This can't be real!</i></p>
+
+    <!-- em -->
+    <!-- HTML <em> 요소는 텍스트의 강세를 나타냅니다. <em> 요소를 중첩하면 더 큰 강세를 뜻하게 됩니다. -->
+      <p>Get out of bed <em>now</em>!</p>
+
+      <p>We <em>had</em> to do something about it.</p>
+
+      <p>This is <em>not</em> a drill!</p>
+
+   <!-- mark -->
+   <!-- HTML <mark> 요소는 현재 맥락에 관련이 깊거나 중요해 표시 또는 하이라이트한 부분을 나타냅니다. -->   
+    <p>Search results for "salamander":</p>
+
+    <hr>
+    
+    <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+    
+    <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p> 
+
+    <!-- <mark>와 <strong> 요소의 차이점을 기억하세요. 텍스트에서, <mark>는 연관성을 가진 부분을, <strong>은 중요도를 가진 부분을 나타낼 때 사용합니다. -->
+    <blockquote>
+      It is a period of civil war. Rebel spaceships, striking from a
+      hidden base, have won their first victory against the evil
+      Galactic Empire. During the battle, <mark>Rebel spies managed
+      to steal secret plans</mark> to the Empire’s ultimate weapon,
+      the DEATH STAR, an armored space station with enough power to
+      destroy an entire planet.
+    </blockquote>
+
+    <!-- small -->
+    <!-- HTML <small> 요소는 덧붙이는 글이나, 저작권과 법률 표기 등의 작은 텍스트를 나타냅니다. 기본 상태에서 <small>은 자신의 콘텐츠를 한 사이즈 작은 글꼴(small에서 x-small 등)로 표시하지만, 스타일을 적용한 후에도 글씨 크기가 작을 필요는 없습니다. -->
+      <p>MDN Web Docs is a learning platform for Web technologies and the software that powers the Web.</p>
+
+      <hr>
+      
+      <p><small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small></p>
+
+    <!-- sup -->
+    <!-- HTML <sup> 요소는 활자 배치를 위 첨자로 해야 하는 인라인 텍스트를 지정합니다. 위 첨자는 보통 더 작은 글씨 크기를 가지고, 기준선을 위로 올려 렌더링 합니다. -->
+      <p>The <b>Pythagorean theorem</b> is often expressed as the following equation:</p>
+
+<p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
+
+    <!-- sub -->
+    <!-- HTML <sub> 요소는 활자 배치를 아래 첨자로 해야 하는 인라인 텍스트를 지정합니다. 아래 첨자는 보통 더 작은 글씨 크기를 가지고, 기준선을 아래로 내려 렌더링 합니다.  -->
+    <p>Almost every developer's favorite molecule is
+      C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
+      
+      <!-- del , ins -->
+      <!-- HTML <del> 요소는 문서에서 제거된 텍스트의 범위를 나타냅니다. 문서나 소스 코드의 변경점 추적 등에 사용할 수 있습니다. <ins> 요소를 추가된 텍스트의 범위를 나타낼 수 있습니다. -->
+      <!-- HTML <ins> 요소는 문서에 추가된 텍스트의 범위를 나타냅니다. <del> 요소를 사용하면 삭제된 텍스트의 범위를 나타낼 수 있습니다.-->
+        <blockquote>
+          There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.
+      </blockquote>
+    <!-- code -->
+    <!-- HTML <code> 요소는 짧은 코드 조각을 나타내는 스타일을 사용해 자신의 콘텐츠를 표시합니다. 기본 스타일은 사용자 에이전트의 고정폭 글씨체입니다. -->
+      <p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.</p>
+
+      <!-- kbd -->
+      <!-- <kbd>: 키보드 입력 요소 -->
+        <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+
+      <!-- a -->
+      <!-- HTML <a> 요소(앵커 요소)는 href 특성을 통해 다른 페이지나 같은 페이지의 어느 위치, 파일, 이메일 주소와 그 외 다른 URL로 연결할 수 있는 하이퍼링크를 만듭니다. <a> 안의 콘텐츠는 링크 목적지의 설명을 나타내야 합니다. -->
+        <!-- href 
+        하이퍼링크가 가리키는 URL. 링크는 HTTP 기반 URL일 필요는 없고, 브라우저가 지원하는 모든 URL 스킴을 사용할 수 있습니다.
+        -->
+        <!-- 절대경로 -->
+        <a href="https://www.mozilla.com">mozilla</a>
+
+        <!-- 상대 경로 -->
+        <a href="./0830.html">0830</a>
+
+        <!-- 이메일 전화 -->
+        <a href="yanuus9797@gmail.com">email</a>
+
+        <!-- target '
+          링크한 URL을 표시할 위치. 가능한 값은 브라우징 맥락으로, 즉 탭, 창, <iframe>의 이름이나 특정 키워드입니다. 다음 키워드는 특별한 뜻을 가지고 있습니다.
+          '-->
+          <a href="www.naver.com" target="_blank">naver</a>
+
+    </body>
+</html>
