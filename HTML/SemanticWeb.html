@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SemenaticWeb</title>
+</head>
+<body>
+    <!-- 시멘틱 웹 -->
+  <!--
+    의미론적인 마크업을 사용하면 아래와 같은 이점이 있습니다.
+    - 검색 엔진은 의미론적 마크업을 분석하여 페이지의 검색 랭킹에 영향을 줄 수 있는 중요한 키워드로 간주합니다.
+    - 시각 장애가 있는 사용자가 스크린리더 페이지로 탐색할 때 의미론적 마크업을 푯말로 사용할수 있습니다.
+    - 의미가 없는 끊임없는 div 들을 탐색하는 것보다 의미있는 코드 블록을 찾는것이 훨씬 쉽습니다.
+    - 개발자에게 태그 안에 채워질 데이터 유형을 제안합니다.
+    - 의미있는 이름짓기 는 적절한 사용자 쩡의 요소 구성 요소의 이름짓기 를 반영합니다.
+  -->
+  
+  <!-- 시멘틱 웹을 사용 -->
+  <header>
+   Header   
+  </header>
+
+  <nav> menu </nav>
+
+  <main>
+    <article> 본문 </article>
+    <aside> 사이드 바 </aside>
+  </main>
+
+  <footer> Footer </footer>
+  
+  <!-- 시멘틱 웹 사용 x-->
+  <div> Header </div>
+  <div> 메뉴 </div>
+  <div> 
+    <div>
+      본문
+    </div>
+    <div>
+      사이드바 
+    </div>
+  </div>
+  <div>
+    footer
+  </div>
+</body>
+</html>

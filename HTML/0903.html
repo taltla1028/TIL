@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .warning {
+    border: 10px ridge #f00;
+    background-color: #ff0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.warning img {
+    width: 100%;
+}
+
+.warning p {
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+}
+
+span.ingredient {
+    color: #f00;
+}
+
+.one{
+  background-color: #f00;
+}
+.two{
+  background-color: blue;
+}
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside > p {
+    margin: .5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.forecast {
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast > h1,
+.day-forecast {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast {
+    background: right/contain content-box border-box no-repeat
+        url('/media/examples/rain.svg') white;
+}
+
+.day-forecast > h2,
+.day-forecast > p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+
+hgroup > h1, h2 {
+    margin: 0;
+}
+
+
+  </style>
+</head>
+<br>
+  <!-- div -->
+  <!-- HTML <div> 요소는 플로우 콘텐츠를 위한 통용 컨테이너입니다. CSS로 꾸미기 전에는 콘텐츠나 레이아웃에 어떤 영향도 주지 않습니다. -->
+    <div class="warning">
+      <img src="/media/examples/leopard.jpg"
+           alt="An intimidating leopard.">
+      <p>Beware of the leopard</p>
+  </div>
+</br>
+  <div class="one"> 
+    안녕하세요.
+  </div>
+  <!-- span -->
+  <!-- 
+    HTML <span> 요소는 구문 콘텐츠를 위한 통용 인라인 컨테이너로, 본질적으로는 아무것도 나타내지 않습니다. 스타일을 적용하기 위해서, 또는 lang 등 어떤 특성의 값을 서로 공유하는 요소를 묶을 때 사용할 수 있습니다. 적절한 의미를 가진 다른 요소가 없을 때에만 사용해야 합니다. <span>은 <div>와 매우 유사하지만, <div>는 블록 레벨 요소인 반면 <span>은 인라인 요소입니다.
+  -->
+  <p>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span class="ingredient">garlic</span> to a blender and blend into a paste.</p>
+
+  <p>Gradually add the <span class="ingredient">olive oil</span> while running the blender slowly.</p>
+
+  <span class="two">
+    안녕하세요.
+  </span>
+  <!-- header-->
+  <!-- HTML <header> 요소는 소개 및 탐색에 도움을 주는 콘텐츠를 나타냅니다. 제목, 로고, 검색 폼, 작성자 이름 등의 요소도 포함할 수 있습니다. -->
+   <!-- 페이지 제목 -->
+    <header>
+      <h1>Main Page Title</h1>
+      <img src="mdn-logo-sm.png" alt="MDN logo">
+    </header>
+    <!-- 글 제목 -->
+    <article>
+      <header>
+        <h2>The Planet Earth</h2>
+        <p>Posted on Wednesday, <time datetime="2017-10-04">4 October 2017</time> by Jane Smith</p>
+      </header>
+      <p>We live on a planet that's blue and green, with so many things still unseen.</p>
+      <p><a href="https://janesmith.com/the-planet-earth/">Continue reading....</a></p>
+    </article>
+  <!-- footer -->
+  <!-- HTML <footer> 요소는 가장 가까운 구획 콘텐츠나 구획 루트의 푸터를 나타냅니다. 푸터는 일반적으로 구획의 작성자, 저작권 정보, 관련 문서 등의 내용을 담습니다. --> 
+    <article>
+      <h1>How to be a wizard</h1>
+      <ol>
+          <li>Grow a long, majestic beard.</li>
+          <li>Wear a tall, pointed hat.</li>
+          <li>Have I mentioned the beard?</li>
+      </ol>
+      <footer>
+          <p>© 2018 Gandalf</p>
+      </footer>
+  </article>
+  <!-- nav -->
+  <!-- HTML <nav> 요소는 문서의 부분 중 현재 페이지 내, 또는 다른 페이지로의 링크를 보여주는 구획을 나타냅니다. 자주 쓰이는 예제는 메뉴, 목차, 색인입니다. -->
+    <nav class="crumbs">
+      <ol>
+          <li class="crumb"><a href="#">Bikes</a></li>
+          <li class="crumb"><a href="#">BMX</a></li>
+          <li class="crumb">Jump Bike 3000</li>
+      </ol>
+  </nav>
+  
+  <h1>Jump Bike 3000</h1>
+  <p>This BMX bike is a solid step into the pro world. It looks as legit as it rides and is built to polish your skills.</p>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- aside -->
+  <!-- HTML <aside> 요소는 문서의 주요 내용과 간접적으로만 연관된 부분을 나타냅니다. 주로 사이드바 혹은 콜아웃 박스로 표현합니다. -->
+    <p>Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval and adult forms.</p>
+
+    <aside>
+        <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+    </aside>
+    
+    <p>Several species of salamander inhabit the temperate rainforest of the Pacific Northwest, including the Ensatina, the Northwestern Salamander and the Rough-skinned Newt. Most salamanders are nocturnal, and hunt for insects, worms and other small creatures.</p>
+
+    <article>
+      <p>
+        디즈니 만화영화 <em>인어 공주</em>는
+        1989년 처음 개봉했습니다.
+      </p>
+      <aside>
+        인어 공주는 첫 개봉 당시 8700만불의 흥행을 기록했습니다.
+      </aside>
+      <p>
+        영화에 대한 정보...
+      </p>
+    </article>
+
+    <!-- main -->
+    <!-- HTML <main> 요소는 문서 <body>의 주요 콘텐츠를 나타냅니다. 주요 콘텐츠 영역은 문서의 핵심 주제나 앱의 핵심 기능에 직접적으로 연결됐거나 확장하는 콘텐츠로 이루어집니다. -->
+      <!-- hidden 속성 없이는 문서에 하나보다 많은 <main> 요소가 존재해선 안됩니다. -->
+        <!-- other content -->
+
+<main>
+  <h1>Apples</h1>
+  <p>The apple is the pomaceous fruit of the apple tree.</p>
+
+  <article>
+    <h2>Red Delicious</h2>
+    <p>These bright red apples are the most common found in many
+    supermarkets.</p>
+    <p>... </p>
+    <p>... </p>
+  </article>
+
+  <article>
+    <h2>Granny Smith</h2>
+    <p>These juicy, green apples make a great filling for
+    apple pies.</p>
+    <p>... </p>
+    <p>... </p>
+  </article>
+
+</main>
+
+<!-- other content -->
+
+<!-- article -->
+<!-- HTML <article> 요소는 문서, 페이지, 애플리케이션, 또는 사이트 안에서 독립적으로 구분해 배포하거나 재사용할 수 있는 구획을 나타냅니다. 사용 예제로 게시판과 블로그 글, 매거진이나 뉴스 기사 등이 있습니다. -->
+  <!--
+    하나의 문서가 여러 개의 <article>을 가질 수 있습니다. 예컨대 사용자가 스크롤하면 계속해서 다음 글을 보여주는 블로그의 경우, 각각의 글이 <article> 요소가 되며, 그 안에는 또 여러 개의 <section>이 존재할 수 있습니다.
+  -->
+  <article class="forecast">
+    <h1>Weather forecast for Seattle</h1>
+    <article class="day-forecast">
+        <h2>03 March 2018</h2>
+        <p>Rain.</p>
+    </article>
+    <article class="day-forecast">
+        <h2>04 March 2018</h2>
+        <p>Periods of rain.</p>
+    </article>
+    <article class="day-forecast">
+        <h2>05 March 2018</h2>
+        <p>Heavy rain.</p>
+    </article>
+</article>
+
+<article class="film_review">
+  <header>
+    <h2>Jurassic Park</h2>
+  </header>
+  <section class="main_review">
+    <p>Dinos were great!</p>
+  </section>
+  <section class="user_reviews">
+    <article class="user_review">
+      <p>Way too scary for me.</p>
+      <footer>
+        <p>
+          Posted on <time datetime="2015-05-16 19:00">May 16</time> by Lisa.
+        </p>
+      </footer>
+    </article>
+    <article class="user_review">
+      <p>I agree, dinos are my favorite.</p>
+      <footer>
+        <p>
+          Posted on <time datetime="2015-05-17 19:00">May 17</time> by Tom.
+        </p>
+      </footer>
+    </article>
+  </section>
+  <footer>
+    <p>
+      Posted on <time datetime="2015-05-15 19:00">May 15</time> by Staff.
+    </p>
+  </footer>
+</article>
+
+<!-- section -->
+<!-- HTML <section> 요소는 HTML 문서의 독립적인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용합니다. 보통 <section>은 제목을 포함하지만, 항상 그런 것은 아닙니다. -->
+  <!-- article -->
+  <h1>Choosing an Apple</h1>
+  <section>
+      <h2>Introduction</h2>
+      <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+  </section>
+  
+  <section>
+      <h2>Criteria</h2>
+      <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+  </section>
+ <!-- /article -->
+ 
+</body>
+</html>
