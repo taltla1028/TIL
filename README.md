@@ -80,7 +80,7 @@ Writer: YaNuu
 
    ##### 인라인 인용문 요소
 
-   **HTML `<q>`요소**는 둘러싼 텍스트가 짧은 인라인 인용문이라는것을 나타냅니다. 대부분의 브라우저에서는 앞과 뒤에 따옴표를 붙여 표현합니다. `<q>`는 **줄 바꿈이 없는 짧은 경우에 적합합니다.** 긴 인용문은 [``](https://developer.mozilla.org/ko/docs/Web/HTML/Element/blockquote) 요소를 사용하세요.
+   **HTML `<q>`요소**는 둘러싼 텍스트가 짧은 인라인 인용문이라는것을 나타냅니다. 대부분의 브라우저에서는 앞과 뒤에 따옴표를 붙여 표현합니다. `<q>`는 **줄 바꿈이 없는 짧은 경우에 적합합니다.** 긴 인용문은 [`blockquote`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/blockquote) 요소를 사용하세요.
 
    ```html
    <p>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>
@@ -170,20 +170,11 @@ Writer: YaNuu
 
    줄의 가로 길이를 픽셀이나 퍼센트 값으로 지정합니다.
 
-     ##### abbr
+##### Abbr
 
    **HTML `<abbr>` 요소**는 준말 또는 머리글자를 나타냅니다. 선택 속성인 [`title`](https://developer.mozilla.org/ko/docs/Web/HTML/Global_attributes#attr-title)을 사용하면 준말의 전체 뜻이나 설명을 제공할 수 있습니다. `title` 속성은 전체 설명만을 가져야 하며 다른건 포함할 수 없습니다.	
 
-    ```html
-   <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr title="HyperText Markup Language">HTML</abbr>.</p>
-    ```
-
-   
-
-
-
-
-
+ <p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr title="HyperText Markup Language">HTML</abbr>.</p>
 
    ##### address
 
@@ -753,8 +744,8 @@ https://dev.w3.org/html5/html-author/charref
    **HTML `<section>` 요소**는 HTML 문서의 독립적인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용합니다. 보통 `<section>`은 제목을 포함하지만, 항상 그런 것은 아닙니다.
 
    - 각각의 `<section>`을 식별할 수단이 필요합니다. 주로 제목 <h1>~<h6> 요소를 `<section>`의 자식으로 포함하는 방법을 사용합니다.
-   - 요소의 콘텐츠를 따로 구분해야 할 필요가 있으면 [``](https://developer.mozilla.org/ko/docs/Web/HTML/Element/article) 요소를 고려하세요.
-   - `<section>` 요소를 일반 컨테이너로 사용하지 마세요. 특히 단순한 스타일링이 목적이라면 [``](https://developer.mozilla.org/ko/docs/Web/HTML/Element/div) 요소를 사용해야 합니다. 대개, 문서 요약에 해당 구획이 논리적으로 나타나야 하면 `<section>`이 좋은 선택입니다.
+   - 요소의 콘텐츠를 따로 구분해야 할 필요가 있으면 <article>요소를 고려하세요.
+   - `<section>` 요소를 일반 컨테이너로 사용하지 마세요. 특히 단순한 스타일링이 목적이라면  요소를 사용해야 합니다. 대개, 문서 요약에 해당 구획이 논리적으로 나타나야 하면 `<section>`이 좋은 선택입니다.
 
    ###### 예제
 
@@ -775,6 +766,23 @@ https://dev.w3.org/html5/html-author/charref
    
 
 3. 목록과 표
+
+   #### 목록
+
+   ##### ul
+
+   ##### ol
+
+   ##### li
+
+   ##### dl
+
+   ##### dt
+
+   ##### Dd
+
+
+
 
 4. 임베디드 요소
 
