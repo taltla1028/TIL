@@ -1,3 +1,9 @@
+# FRONT TIL 08.29 START!! 😀
+
+Writer: YaNuu
+
+
+
 ## HTML
 
 1. 텍스트 요소
@@ -173,6 +179,7 @@
     ```
 
    
+
 
 
 
@@ -546,9 +553,224 @@ https://dev.w3.org/html5/html-author/charref
 
    #### HTML5에서의 시멘틱 웹
 
-   html5에서의 시멘틱 웹을 쉽게 구성할수 있도록 만들어
+   html5에서의 시멘틱 웹을 쉽게 구성할수 있도록 만들어주는 요소들이 추가되었는데 
 
    
+
+   ###### 기존
+
+   ```html
+   <div id="header"> 내용 </div>
+   ```
+
+   
+
+   ###### HTML5 시멘틱 웹
+
+   ```html
+   <header> 내용 </header>
+   ```
+
+
+   의미론적으로 나타낼수 있게 되었다. 이는 div=header 모두 읽었던 예전 XHTML이나 HTML4보다 훨씬 효율적이라고 할수있따
+
+   #### 시멘틱 웹의 개념
+
+   웹 기술은 정보표현과 전달에 간편한 방법을 제공하여 인터넷이 실생활까지 확산되는 기폭제 역할을 하였다. 그러나, 웹상에 축적된 정보가 방대해 짐에 따라 많은 문제에 봉착하게 되었다. 웹 기술은 축적된 방대한 데이터에 대하여 키워드(keyword)에 의한 정보 접근만을 허용하고 있어, 정보 검색시 무수히 많은 불필요한 정보가 돌출하여 정보 홍수를 가중시키고 있다. 또한, 컴퓨터가 필요한 정보를 추출, 해석, 가공할 수 있는 방법이 없어, 모든 정보를 사용자가 직접 개입해서 처리하여야 하는 문제가 있다. 이러한 문제들의 근본원인은 컴퓨터가 정보자원의 의미를 이해하지 못하는데 원인이 있다. 이러한 웹 기술은 팀 버너스리가 초창기에 구상하였던 웹과도 거리가 있다.
+
+   2001년 팀 버너스리등에 의해 웹 기술의 비전으로 시맨틱 웹이 제시되었다. 시맨틱 웹은 기존 웹을 확장하여 컴퓨터가 이해할 수 있는 잘 정의된 의미를 기반으로 의미적 상호운용성(semantic interoperability)을 실현하여, 다양한 정보자원의 처리 자동화, 데이터의 통합 및 재사용등을 컴퓨터가 스스로 수행하여, 인간과 컴퓨터 모두 잘 이해할수 있는 웹을 만드는 것이 목표이다.
+
+   
+
+   ##### header
+
+   **HTML `<header>` 요소**는 소개 및 탐색에 도움을 주는 콘텐츠를 나타냅니다. 제목, 로고, 검색 폼, 작성자 이름 등의 요소도 포함할 수 있습니다.
+
+   
+
+   ###### 예제
+
+   ```html
+   <!-- 페이지 제목 -->
+   <header>
+     <h1>Main Page Title</h1>
+     <img src="mdn-logo-sm.png" alt="MDN logo">
+   </header>
+   
+   <!-- 글제목 -->
+   <article>
+     <header>
+       <h2>The Planet Earth</h2>
+       <p>Posted on Wednesday, <time datetime="2017-10-04">4 October 2017</time> by Jane Smith</p>
+     </header>
+     <p>We live on a planet that's blue and green, with so many things still unseen.</p>
+     <p><a href="https://janesmith.com/the-planet-earth/">Continue reading....</a></p>
+   </article>
+   
+   ```
+
+   
+
+   ##### footer
+
+   **HTML `<footer>` 요소**는 가장 가까운 [구획 콘텐츠](https://developer.mozilla.org/ko/docs/Web/HTML/HTML5_문서의_섹션과_윤곽)나 [구획 루트](https://developer.mozilla.org/ko/docs/Web/HTML/HTML5_문서의_섹션과_윤곽)의 푸터를 나타냅니다. 푸터는 일반적으로 구획의 작성자, 저작권 정보, 관련 문서 등의 내용을 담습니다.
+
+   ###### 예제
+
+   ```html
+   <footer>
+     Some copyright info or perhaps some author
+     info for an &lt;article&gt;?
+   </footer>
+   ```
+
+   
+
+   ##### nav
+
+   **HTML `<nav>` 요소**는 문서의 부분 중 현재 페이지 내, 또는 다른 페이지로의 링크를 보여주는 구획을 나타냅니다. 자주 쓰이는 예제는 메뉴, 목차, 색인입니다.
+
+   ###### 예제
+
+   ```html
+   <nav>
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Contact</a></li>
+     </ul>
+   </nav>
+   ```
+
+   
+
+   ##### aside
+
+   **HTML `<aside>` 요소**는 문서의 주요 내용과 간접적으로만 연관된 부분을 나타냅니다. 주로 사이드바 혹은 콜아웃 박스로 표현합니다.
+
+   
+
+   ###### 예제
+
+   ```html
+   <!-- 다음 예제는 글 내의 문단을 <aside>로 표시합니다. 해당 문단은 글의 주제와 간접적으로만 연결되어 있습니다. -->
+   <article>
+     <p>
+       디즈니 만화영화 <em>인어 공주</em>는
+       1989년 처음 개봉했습니다.
+     </p>
+     <aside>
+       인어 공주는 첫 개봉 당시 8700만불의 흥행을 기록했습니다.
+     </aside>
+     <p>
+       영화에 대한 정보...
+     </p>
+   </article>
+   ```
+
+   
+
+   ##### main
+
+   **HTML `<main>` 요소**는 문서 [`body`](https://developer.mozilla.org/ko/docs/Web/HTML/Element/body)의 주요 콘텐츠를 나타냅니다. 주요 콘텐츠 영역은 문서의 핵심 주제나 앱의 핵심 기능에 직접적으로 연결됐거나 확장하는 콘텐츠로 이루어집니다.
+
+   ###### 예제
+
+   ```html
+   <!-- other content -->
+   
+   <main>
+     <h1>Apples</h1>
+     <p>The apple is the pomaceous fruit of the apple tree.</p>
+   
+     <article>
+       <h2>Red Delicious</h2>
+       <p>These bright red apples are the most common found in many
+       supermarkets.</p>
+       <p>... </p>
+       <p>... </p>
+     </article>
+   
+     <article>
+       <h2>Granny Smith</h2>
+       <p>These juicy, green apples make a great filling for
+       apple pies.</p>
+       <p>... </p>
+       <p>... </p>
+     </article>
+   
+   </main>
+   
+   <!-- other content -->
+   ```
+
+   
+
+   ##### article
+
+   **HTML `<article>` 요소**는 문서, 페이지, 애플리케이션, 또는 사이트 안에서 독립적으로 구분해 배포하거나 재사용할 수 있는 구획을 나타냅니다. 사용 예제로 게시판과 블로그 글, 매거진이나 뉴스 기사 등이 있습니다.
+
+   ###### 예제
+
+   ```html
+   <article class="film_review">
+     <header>
+       <h2>Jurassic Park</h2>
+     </header>
+     <section class="main_review">
+       <p>Dinos were great!</p>
+     </section>
+     <section class="user_reviews">
+       <article class="user_review">
+         <p>Way too scary for me.</p>
+         <footer>
+           <p>
+             Posted on <time datetime="2015-05-16 19:00">May 16</time> by Lisa.
+           </p>
+         </footer>
+       </article>
+       <article class="user_review">
+         <p>I agree, dinos are my favorite.</p>
+         <footer>
+           <p>
+             Posted on <time datetime="2015-05-17 19:00">May 17</time> by Tom.
+           </p>
+         </footer>
+       </article>
+     </section>
+     <footer>
+       <p>
+         Posted on <time datetime="2015-05-15 19:00">May 15</time> by Staff.
+       </p>
+     </footer>
+   </article>
+   ```
+
+   
+
+   ##### Section
+
+   **HTML `<section>` 요소**는 HTML 문서의 독립적인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용합니다. 보통 `<section>`은 제목을 포함하지만, 항상 그런 것은 아닙니다.
+
+   - 각각의 `<section>`을 식별할 수단이 필요합니다. 주로 제목 <h1>~<h6> 요소를 `<section>`의 자식으로 포함하는 방법을 사용합니다.
+   - 요소의 콘텐츠를 따로 구분해야 할 필요가 있으면 [``](https://developer.mozilla.org/ko/docs/Web/HTML/Element/article) 요소를 고려하세요.
+   - `<section>` 요소를 일반 컨테이너로 사용하지 마세요. 특히 단순한 스타일링이 목적이라면 [``](https://developer.mozilla.org/ko/docs/Web/HTML/Element/div) 요소를 사용해야 합니다. 대개, 문서 요약에 해당 구획이 논리적으로 나타나야 하면 `<section>`이 좋은 선택입니다.
+
+   ###### 예제
+
+   ```html
+   <!-- 이전 -->
+   <div>
+     <h2>Heading</h2>
+     <img>some image</img>
+   </div>
+   
+   <!-- 이후 -->
+   <section>
+     <h2>Heading</h2>
+     <img>some image</img>
+   </section>
+   ```
 
    
 
